@@ -1,0 +1,13 @@
+{
+    "apps" : [{
+        // twitter rabbit api
+        "name"       : "tw-account-queue",
+        "script"     : "account-queue-run.js",
+        // "instances"  : 4,
+        // "exec_mode"  : "cluster_mode",
+        "log_date_format" : "YYYY-MM-DD HH:mm:ss.SS",
+        "error_file" : "./logs/err-account.log",
+        "out_file"   : "./logs/out-account.log",
+        "pid_file"   : "./logs/child-account.pid"
+    }]
+}

@@ -1,0 +1,19 @@
+{
+    "apps" : [{
+        // twitter accounts service
+        "name"       : "tw-account-queue",
+        "script"     : "account-queue-run.js",
+        "log_date_format" : "YYYY-MM-DD HH:mm:ss.SS",
+        "error_file" : "./logs/err-account.log",
+        "out_file"   : "./logs/out-account.log",
+        "pid_file"   : "./logs/child-account.pid"
+    }, {
+        // twitter rabbit api
+        "name"       : "tw-rabbit-api",
+        "script"     : "api-rabbit-run.js",
+        "log_date_format" : "YYYY-MM-DD HH:mm:ss.SS",
+        "error_file" : "./logs/err.log",
+        "out_file"   : "./logs/out.log",
+        "pid_file"   : "./logs/child.pid"
+    }]
+}

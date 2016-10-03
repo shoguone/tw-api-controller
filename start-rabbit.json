@@ -1,0 +1,13 @@
+{
+    "apps" : [{
+        // twitter rabbit api
+        "name"       : "tw-rabbit-api",
+        "script"     : "api-rabbit-run.js",
+        // "instances"  : 4,
+        // "exec_mode"  : "cluster_mode",
+        "log_date_format" : "YYYY-MM-DD HH:mm:ss.SS",
+        "error_file" : "./logs/err.log",
+        "out_file"   : "./logs/out.log",
+        "pid_file"   : "./logs/child.pid"
+    }]
+}
